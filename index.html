@@ -1,120 +1,190 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>third-assignment</title>
-    <!-- font awesome -->
-    <script src="https://kit.fontawesome.com/f056a62cc9.js" crossorigin="anonymous"></script>
-    <!-- google font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
-    <!-- daisyUi and tailwind -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-      .font-sora{
-        font-family: "Sora", serif;
-      }
-    </style>
-     <!-- custom color -->
-     <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              clifford: '#da373d',
-             'primary-color': '#179800',
-            }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>third-assignment</title>
+  <!-- font awesome -->
+  <script src="https://kit.fontawesome.com/f056a62cc9.js" crossorigin="anonymous"></script>
+  <!-- google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+  <!-- daisyUi and tailwind -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .font-sora {
+      font-family: "Sora", serif;
+    }
+  </style>
+  <!-- custom color -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            'primary-color': '#179800',
+          },
+          backgroundImage: {
+            'popular-section': "url('./c2-assets/vegetable-offer.png')",
           }
         }
       }
-    </script>
+    }
+  </script>
 </head>
+
 <body>
-    <header class="md:px-24 md:py-8 px-4 py-4 bg-gradient-to-r from-[#FFFFFF] to-[#EFEBE3]">
-       <nav>
-        <div class=" flex justify-between items-center relative">
-            <div class="">
-                <img class="" src="./c2-assets/logo-header.png" alt="">
-            </div>
-            <div class="relative">
-              <div class="dropdown">
-                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                
-                
-                  <i class="fa-solid fa-bars"></i>
-                </div>
-               
-              </div>
-              
-            </div>
-            <div class="  hidden lg:flex">
-              <ul class="menu menu-horizontal px-1">
-                <li><a class="text-xl font-normal">Products</a></li>
-                <li><a class="text-xl font-normal">Services</a></li>
-                <li><a class="text-xl font-normal">Contact us</a></li>
-              </ul>
-            </div>
-            <div class=" md:flex gap-4 hidden  md:visible items-center">
-                <i class="fa-solid fa-magnifying-glass text-3xl"></i>
-                <i class="fa-solid fa-cart-shopping text-3xl"></i>
-                <button class="btn btn-primary border border-2 border-primary-color bg-white text-black rounded-lg px-7 py-3">Log in</button>
-                <button class="btn btn-primary bg-primary-color rounded-lg px-7 py-3">Register</button>
+  <header class="md:px-24 md:py-8 px-4 py-4 bg-gradient-to-r from-[#FFFFFF] to-[#EFEBE3]">
+    <nav>
+      <div class=" flex justify-between items-center relative">
+        <div class="">
+          <img class="" src="./c2-assets/logo-header.png" alt="">
+        </div>
+        <div class="relative">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
 
+
+              <i class="fa-solid fa-bars"></i>
             </div>
+
           </div>
-          <div class="visible md:hidden">
-            <hr class="bg-primary-color mt-5">
-          </div>
-       </nav>
-     <!-- banner part -->
-       <div class="banner-container mt-5 md:mt-10">
-        <h1 class="font-semibold text-3xl md:text-5xl text-center">Freshness <span class="text-primary-color">You Can <br>
+
+        </div>
+        <div class="  hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li><a class="text-xl font-normal">Products</a></li>
+            <li><a class="text-xl font-normal">Services</a></li>
+            <li><a class="text-xl font-normal">Contact us</a></li>
+          </ul>
+        </div>
+        <div class=" md:flex gap-4 hidden  md:visible items-center">
+          <i class="fa-solid fa-magnifying-glass text-3xl"></i>
+          <i class="fa-solid fa-cart-shopping text-3xl"></i>
+          <button class="btn btn-primary border-2 border-primary-color bg-white text-black rounded-lg px-7 py-3">Log
+            in</button>
+          <button class="btn btn-primary bg-primary-color rounded-lg px-7 py-3">Register</button>
+
+        </div>
+      </div>
+      <div class="visible md:hidden">
+        <hr class="bg-primary-color mt-5">
+      </div>
+    </nav>
+    <!-- banner part -->
+    <div class="banner-container mt-5 md:mt-10">
+      <h1 class="font-semibold text-3xl md:text-5xl text-center">Freshness <span class="text-primary-color">You Can <br>
           Count </span>On, Prices You’ll Love!</h1>
-          <p class="text-center mt-8">Shop your daily essentials at unbeatable prices. From fresh produce to pantry <br> staples, we’ve got you covered every day!</p>
-          <div class="mt-10">
-            <img src="./c2-assets/hero-vegetables.png" alt="">
+      <p class="text-center mt-8">Shop your daily essentials at unbeatable prices. From fresh produce to pantry <br>
+        staples, we’ve got you covered every day!</p>
+      <div class="mt-10">
+        <img src="./c2-assets/hero-vegetables.png" alt="">
+      </div>
+    </div>
+  </header>
+  <main>
+    <!-- services section -->
+    <section class="md:px-24 md:py-8 px-4 py-4">
+      <h3 class="font-semibold text-4xl text-left text-primary-color">Services</h3>
+      <div class="services-container  grid grid-cols-1 md:grid-cols-3 gap-12 mt-10">
+        <div class="p-8 rounded-2xl bg-[#EFEBE3]">
+          <div class=" flex items-center justify-center">
+            <img class="bg-white p-3 rounded-full" src="./c2-assets/service.png" alt="">
           </div>
-       </div>
-    </header>
-    <main>
-      <!-- services section -->
-        <section class="md:px-24 md:py-8 px-4 py-4">
-           <div class="services-container  grid grid-cols-1 md:grid-cols-3 gap-12 mt-10">
-            <div class="p-8 rounded-2xl bg-[#EFEBE3]">
-              <div class=" flex items-center justify-center">
-               <img class="bg-white p-3 rounded-full" src="./c2-assets/service.png" alt="">
-              </div>
-               <h3 class="font-medium text-2xl text-center mt-6 mb-4">24/7 Services </h3>
-               <p class="text-xl font-light text-center">Our vegetable delivery service offers 24/7 fresh and organic produce straight from local farms .Explore our website for 24 different.</p>
-             </div>
-            <!--  -->
-            <div class="p-8 rounded-2xl bg-[#EFEBE3]">
-              <div class=" flex items-center justify-center">
-               <img class="bg-white p-3 rounded-full" src="./c2-assets/delivery.png" alt="">
-              </div>
-               <h3 class="font-medium text-2xl text-center mt-6 mb-4">Fast delivary</h3>
-               <p class="text-xl font-light text-center">Get farm-fresh vegetables delivered fast  with our express service! We guarantee same-day vegetable delivery.</p>
-             </div>
-            <!-- -->
-            <div class="p-8 rounded-2xl bg-[#EFEBE3]">
-              <div class=" flex items-center justify-center">
-               <img class="bg-white p-3 rounded-full" src="./c2-assets/healthy.png" alt="">
-              </div>
-               <h3 class="font-medium text-2xl text-center mt-6 mb-4">Healthy Products  </h3>
-               <p class="text-xl font-light text-center">Discover fresh, organic, and chemical-free vegetables for a healthier lifestyle! healthy vegetables every day.</p>
-             </div>
-           </div>
-
-       
+          <h3 class="font-medium text-2xl text-center mt-6 mb-4">24/7 Services </h3>
+          <p class="text-xl font-light text-center">Our vegetable delivery service offers 24/7 fresh and organic produce
+            straight from local farms .Explore our website for 24 different.</p>
+        </div>
+        <!--  -->
+        <div class="p-8 rounded-2xl bg-[#EFEBE3]">
+          <div class=" flex items-center justify-center">
+            <img class="bg-white p-3 rounded-full" src="./c2-assets/delivery.png" alt="">
+          </div>
+          <h3 class="font-medium text-2xl text-center mt-6 mb-4">Fast delivary</h3>
+          <p class="text-xl font-light text-center">Get farm-fresh vegetables delivered fast with our express service!
+            We guarantee same-day vegetable delivery.</p>
+        </div>
+        <!-- -->
+        <div class="p-8 rounded-2xl bg-[#EFEBE3]">
+          <div class=" flex items-center justify-center">
+            <img class="bg-white p-3 rounded-full" src="./c2-assets/healthy.png" alt="">
+          </div>
+          <h3 class="font-medium text-2xl text-center mt-6 mb-4">Healthy Products </h3>
+          <p class="text-xl font-light text-center">Discover fresh, organic, and chemical-free vegetables for a
+            healthier lifestyle! healthy vegetables every day.</p>
+        </div>
+      </div>
 
 
-        </section>
-    </main>
-    <footer>
 
-    </footer>
+
+    </section>
+
+    <!-- this is extra section and this is challeng part -->
+    
+    <!-- customar review section-->
+     <section class="md:px-24 md:py-8 px-4 py-4">
+      <h3 class="font-semibold text-4xl text-left text-primary-color mb-6">Customar Review Section</h3>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-7">
+        <!-- first reviw -->
+        <div class="shadow-xl p-4 rounded-lg space-y-3">
+          <div>
+            <img class="md:w-[400px] w-auto h-[250px]" src="./c2-assets/musi.jpeg" alt="">
+          </div>
+          <h3 class="text-4xl font-semibold">Musfiqur Rahim</h3>
+          <h5>The vegetables were incredibly fresh and full of flavor</h5>
+          <div><div class="rating">
+            <input type="radio" name="rating-4" class="mask mask-star-2 bg-orange-400" />
+            <input type="radio" name="rating-4" class="mask mask-star-2 bg-orange-400" />
+            <input type="radio" name="rating-4" class="mask mask-star-2 bg-orange-400" />
+            <input type="radio" name="rating-4" class="mask mask-star-2 bg-orange-400" checked="checked" />
+            <input type="radio" name="rating-4" class="mask mask-star-2 bg-orange-400" />
+          </div></div>
+        </div>
+        <!-- second review -->
+        <div class="shadow-xl p-4 rounded-lg space-y-3">
+          <div>
+            <img class="md:w-[400px] w-auto h-[250px]" src="./c2-assets/g.jpg" alt="">
+          </div>
+          <h3 class="text-4xl font-semibold">Musfiqur Rahim</h3>
+          <h5>The vegetables were incredibly fresh and full of flavor</h5>
+          <div><div class="rating">
+            <input type="radio" name="rating-4" class="mask mask-star-2 bg-orange-400" />
+            <input type="radio" name="rating-4" class="mask mask-star-2 bg-orange-400" />
+            <input type="radio" name="rating-4" class="mask mask-star-2 bg-orange-400" />
+            <input type="radio" name="rating-4" class="mask mask-star-2 bg-orange-400" checked="checked" />
+            <input type="radio" name="rating-4" class="mask mask-star-2 bg-orange-400" />
+          </div></div>
+        </div>
+
+        <!-- third reveiw -->
+        <div class="shadow-xl p-4 rounded-lg space-y-3">
+          <div>
+            <img class="md:w-[400px] w-auto h-[250px]" src="./c2-assets/e.jpg" alt="">
+          </div>
+          <h3 class="text-4xl font-semibold">Musfiqur Rahim</h3>
+          <h5>The vegetables were incredibly fresh and full of flavor</h5>
+          <div><div class="rating">
+            <input type="radio" name="rating-4" class="mask mask-star-2 bg-orange-400" />
+            <input type="radio" name="rating-4" class="mask mask-star-2 bg-orange-400" />
+            <input type="radio" name="rating-4" class="mask mask-star-2 bg-orange-400" />
+            <input type="radio" name="rating-4" class="mask mask-star-2 bg-orange-400" checked="checked" />
+            <input type="radio" name="rating-4" class="mask mask-star-2 bg-orange-400" />
+          </div></div>
+        </div>
+      </div>
+
+     </section>
+    <!-- popular section -->
+    
+      </main>
+  <footer>
+
+  </footer>
 </body>
+
 </html>

@@ -1,8 +1,12 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-    content: ["./src/**/*.{html,js}"],
-    theme: {
-      extend: {},
+  content: ["./index.html"],
+  theme: {
+    extend: {
+      backgroundImage: {
+        'popular-section': "url('./c2-assets/vegetable-offer.png')",
+      }
     },
-    plugins: [],
-  }
+  },
+  plugins: [],
+}
