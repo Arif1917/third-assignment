@@ -1,22 +1,83 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>third-assignment</title>
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/f056a62cc9.js" crossorigin="anonymous"></script>
     <!-- google font -->
-     <!-- daisyUi and tailwind -->
-      <!-- custom color -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    <!-- daisyUi and tailwind -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      .font-sora{
+        font-family: "Sora", serif;
+      }
+    </style>
+     <!-- custom color -->
+     <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: '#da373d',
+             'primary-color': '#179800',
+            }
+          }
+        }
+      }
+    </script>
 </head>
 <body>
-    <header>
+    <header class="md:px-24 md:py-8 px-4 py-4">
+       <nav>
+        <div class=" flex justify-between items-center relative">
+            <div class="">
+                <img class="" src="./c2-assets/logo-header.png" alt="">
+            </div>
+            <div class="relative">
+              <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                
+                
+                  <i class="fa-solid fa-bars"></i>
+                </div>
+               
+              </div>
+              
+            </div>
+            <div class="  hidden lg:flex">
+              <ul class="menu menu-horizontal px-1">
+                <li><a class="text-xl font-normal">Products</a></li>
+                <li><a class="text-xl font-normal">Services</a></li>
+                <li><a class="text-xl font-normal">Contact us</a></li>
+              </ul>
+            </div>
+            <div class=" md:flex gap-4 hidden  md:visible items-center">
+                <i class="fa-solid fa-magnifying-glass text-3xl"></i>
+                <i class="fa-solid fa-cart-shopping text-3xl"></i>
+                <button class="btn btn-primary border border-2 border-primary-color bg-white text-black rounded-lg px-7 py-3">Log in</button>
+                <button class="btn btn-primary bg-primary-color rounded-lg px-7 py-3">Register</button>
 
+            </div>
+          </div>
+          <div class="visible md:hidden">
+            <hr class="bg-primary-color mt-5">
+          </div>
+       </nav>
+     
+
+    
     </header>
     <main>
 
     </main>
     <footer>
-        
+
     </footer>
 </body>
 </html>
